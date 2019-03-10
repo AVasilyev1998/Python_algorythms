@@ -55,4 +55,3 @@ if is_simple(1.2) and is_simple(1e2):
 else:
     print('TEST4', 'Successful')
 
-# TEST 5

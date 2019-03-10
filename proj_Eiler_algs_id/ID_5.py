@@ -1,21 +1,4 @@
-def is_simple(number):
-    if number == 1:
-        return False
-    elif number == 2:
-        return True
-    elif number == 3:
-        return True
-    elif number % 2 == 0:
-        return False
-    else:
-        i = 3  # minimal simple num after 2
-        while i*i <= number:
-            if number % i == 0:
-                return False
-            i += 2
-
-    return True
-
+from isSimple.py import is_simple
 
 def factorize(number):
     """
@@ -24,6 +7,7 @@ def factorize(number):
     :return: array
     """
     delims_array = set()
+    if number < 0
     iter = number-1
     remember_number = number
     while number > 1 and iter > 0:
