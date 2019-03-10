@@ -1,4 +1,4 @@
-from isSimple.py import is_simple
+from isSimple import is_simple
 
 def factorize(number):
     """
@@ -6,26 +6,35 @@ def factorize(number):
     :param number:
     :return: array
     """
-    delims_array = set()
-    if number < 0
+    # delims_array = set()
+    delims_array = []
+    if number < 0:
+        return ArithmeticError
+    elif number == 0 or number == 1:
+        return list([number])
+    elif is_simple(number):
+        delims_array.append(1)
+        delims_array.append(number)
+        return delims_array
     iter = number-1
-    remember_number = number
     while number > 1 and iter > 0:
         if number == 1:
             break
         if number % iter == 0:
             number /= iter
-            delims_array.add(iter)
+            if is_simple(iter):
+                delims_array.append(iter)
+            else:
+                arr = list(factorize(iter))
+                for i in arr:
+                    delims_array.append(i)
         iter -= 1
-    if delims_array.__len__() == 1:
-        delims_array.add(remember_number)
     return delims_array
 
-print(factorize(1))
 
 
-
-
+for i in range(20):
+    print(i,'  -  ',factorize(i))
 
 
 def nok(arr):
