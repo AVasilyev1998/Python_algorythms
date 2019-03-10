@@ -11,6 +11,9 @@ def palindromic(num_of_bits):
 
 
 
+
+
+
 def is_palindromic(number):
     """
 
