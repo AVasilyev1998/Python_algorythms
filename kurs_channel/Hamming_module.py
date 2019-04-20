@@ -8,6 +8,19 @@ def hamming_code(_in, _out, vector):
     return res_masks
 
 
+def hamming_decode(_in, _out, bin_arr):  # rewrite
+    in_bin_arr = bin_arr
+    count = 0
+    for i in range(0, _out):
+        if 2**i < _out:
+            count += 1
+    for i in [2**i for i in range(count)]:
+        bin_arr[i-1] = 0
+    if bin_arr == int_to_binary_array(hamming_code(_in, _out, binary_array_to_int(in_bin_arr))): # TODO: something logically wrong
+        print('ok')
+    return bin_arr
+
+
 def push_nulls(_in, _out, vector):
     # push nulls
     # nulled: bool = []
@@ -80,3 +93,5 @@ else:
     print('TEST2 ERROR')
 
 
+
+print(hamming_decode(4, 7, [1, 1, 1, 1, 1, 1, 1]))
