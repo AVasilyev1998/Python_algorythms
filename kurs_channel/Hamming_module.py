@@ -1,4 +1,4 @@
-from other_methods import int_to_binary_array, binary_array_to_int
+from kurs_channel.other_methods import int_to_binary_array, binary_array_to_int
 
 
 def hamming_code(_in, _out, vector):
