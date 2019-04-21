@@ -1,5 +1,5 @@
 
-def int_to_binary_array(num):
+def int_to_binary_array(num): # TODO: write target vector length add 0 to front 00....
     """
     :param num int
     :return binary_array
