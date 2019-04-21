@@ -112,21 +112,22 @@ def generate_masks(_out):
 
 
 
-
-
 # TESTS
+#
+# if 90 == binary_array_to_int(hamming_code(4, 7, 10)):
+#     print('TEST1 OK')
+# else:
+#     print('TEST1 ERROR')
+#
+# if 30737 == binary_array_to_int(hamming_code(11, 15, 1041)):
+#     print('TEST2 OK')
+# else:
+#     print('TEST2 ERROR')
+#
+#
+# if hamming_decode(4, 7, hamming_code(4, 7, 10)) == push_nulls(4, 7, [1, 0, 1, 0]):
+#     print('OK')
+#
 
-if 90 == binary_array_to_int(hamming_code(4, 7, 10)):
-    print('TEST1 OK')
-else:
-    print('TEST1 ERROR')
 
-if 30737 == binary_array_to_int(hamming_code(11, 15, 1041)):
-    print('TEST2 OK')
-else:
-    print('TEST2 ERROR')
-
-
-if hamming_decode(4, 7, hamming_code(4, 7, 10)) == push_nulls(4, 7, [1, 0, 1, 0]):
-    print('OK')
 
