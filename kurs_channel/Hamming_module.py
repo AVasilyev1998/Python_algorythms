@@ -2,13 +2,27 @@ from kurs_channel.other_methods import int_to_binary_array, binary_array_to_int
 
 
 def hamming_code(_in, _out, vector):
+    """
+
+    :param _in: int
+    :param _out: int
+    :param vector: int
+    :return: binary_arr
+    """
     binary_arr = int_to_binary_array(vector)
     nulled = push_nulls(_in, _out, binary_arr)
     coded_arr = code_control_bits(_out, nulled)
     return coded_arr
 
 
-def hamming_decode(_in, _out, bin_arr):  # rewrite
+def hamming_decode(_in, _out, bin_arr):
+    """
+
+    :param _in: int
+    :param _out: int
+    :param bin_arr: ...
+    :return: bin_arr
+    """
     in_bin_arr = bin_arr.copy()
     count = 0
     for i in range(0, _out):
