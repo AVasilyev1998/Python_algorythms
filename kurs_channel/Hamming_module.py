@@ -9,17 +9,34 @@ def hamming_code(_in, _out, vector):
 
 
 def hamming_decode(_in, _out, bin_arr):  # rewrite
-    in_bin_arr = bin_arr
+    in_bin_arr = bin_arr.copy()
     count = 0
     for i in range(0, _out):
         if 2**i < _out:
             count += 1
     for i in [2**i for i in range(count)]:
         bin_arr[i-1] = 0
-    if bin_arr == int_to_binary_array(hamming_code(_in, _out, binary_array_to_int(in_bin_arr))): # TODO: something logically wrong
-        print('ok')
+    # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
+    if not bin_arr_comparison(in_bin_arr, hamming_code(_in, _out, binary_array_to_int(in_bin_arr))):
+        return 'Vector is broken' # TODO: return exception or smth more usefull than this
     return bin_arr
 
+
+def bin_arr_comparison(lst1, lst2):
+    if len(lst1) == len(lst2):
+        for i in range(len(lst1)):
+            if lst1[i] != lst2[i]:
+                return False
+    else:
+        return False
+    return True
+
+# bin_arr_comparison tests:
+# print(bin_arr_comparison([1, 0, 1], [1, 0, 1, 1]))
+# print(bin_arr_comparison([1, 0, 1], [1, 0, 1]))
+# print(bin_arr_comparison([1, 0, 1], [1, 0, 0]))
+# print(bin_arr_comparison([0, 0, 1], [1, 0, 0]))
+# print(bin_arr_comparison([1, 1, 1], [1, 0, 1]))
 
 def push_nulls(_in, _out, vector):
     # push nulls
@@ -93,5 +110,6 @@ else:
     print('TEST2 ERROR')
 
 
-
 print(hamming_decode(4, 7, [1, 1, 1, 1, 1, 1, 1]))
+
+
