@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/algorythms_console.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algorythms_console.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" afterDir="false" />
     </list>
@@ -18,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Python_algorythms$is_simple.coverage" NAME="is_simple Coverage Results" MODIFIED="1552205188654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
-    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1555854182980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1555855572237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/algorythms_console$some_py.coverage" NAME="some_py Coverage Results" MODIFIED="1550733976117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$insert_sort.coverage" NAME="insert_sort Coverage Results" MODIFIED="1550744179522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_2.coverage" NAME="ID_2 Coverage Results" MODIFIED="1551971617679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
@@ -43,12 +41,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="519" />
+          <entry key="py" value="1087" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="519" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Python" value="1087" />
         </counts>
       </usages-collector>
     </session>
@@ -58,14 +58,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+            <state relative-caret-position="565">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
               <folding>
+                <element signature="e#123#279#0" />
                 <element signature="e#825#992#0" />
                 <element signature="e#999#1026#0" />
+                <element signature="e#1424#1563#0" />
+                <element signature="e#727#957#0" />
+                <element signature="e#1715#1836#0" />
+                <element signature="e#1998#2018#0" />
                 <element signature="e#1174#1893#0" />
                 <element signature="e#1926#2211#0" />
-                <marker date="1555854216884" expanded="true" signature="851:1312" ph="..." />
+                <marker date="1555855571366" expanded="true" signature="962:1423" ph="..." />
+                <marker date="1555855571366" expanded="true" signature="1890:2164" ph="..." />
               </folding>
             </state>
           </provider>
@@ -74,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="420">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -392,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555737539683</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="code and decode are complete">
+      <created>1555854233922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555854233922</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -402,9 +415,10 @@
     <frame x="-1" y="0" width="1922" height="1173" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12379936" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12379936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3295238" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626467" visible="true" weight="0.3152381" />
@@ -424,6 +438,30 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12379936" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.3295238" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49626467" weight="0.3152381" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49733192" visible="true" weight="0.26666668" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49893278" weight="0.32857144" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.3295238" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4994664" weight="0.3295238" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -450,7 +488,8 @@
     <MESSAGE value="ID_5 -- IN WORK" />
     <MESSAGE value="ID_4 -- PASSED FOR SOME TIME" />
     <MESSAGE value="Jet brains inside changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jet brains inside changes" />
+    <MESSAGE value="code and decode are complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="code and decode are complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,8 +540,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -625,21 +669,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        <state relative-caret-position="565">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
           <folding>
+            <element signature="e#123#279#0" />
             <element signature="e#825#992#0" />
             <element signature="e#999#1026#0" />
+            <element signature="e#1424#1563#0" />
+            <element signature="e#727#957#0" />
+            <element signature="e#1715#1836#0" />
+            <element signature="e#1998#2018#0" />
             <element signature="e#1174#1893#0" />
             <element signature="e#1926#2211#0" />
-            <marker date="1555854216884" expanded="true" signature="851:1312" ph="..." />
+            <marker date="1555855571366" expanded="true" signature="962:1423" ph="..." />
+            <marker date="1555855571366" expanded="true" signature="1890:2164" ph="..." />
           </folding>
         </state>
       </provider>

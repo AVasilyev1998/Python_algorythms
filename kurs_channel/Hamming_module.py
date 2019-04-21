@@ -4,8 +4,8 @@ from kurs_channel.other_methods import int_to_binary_array, binary_array_to_int
 def hamming_code(_in, _out, vector):
     binary_arr = int_to_binary_array(vector)
     nulled = push_nulls(_in, _out, binary_arr)
-    res_masks = code_control_bits(_out, nulled)
-    return res_masks
+    coded_arr = code_control_bits(_out, nulled)
+    return coded_arr
 
 
 def hamming_decode(_in, _out, bin_arr):  # rewrite
@@ -17,7 +17,8 @@ def hamming_decode(_in, _out, bin_arr):  # rewrite
     for i in [2**i for i in range(count)]:
         bin_arr[i-1] = 0
     # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
-    if not bin_arr_comparison(in_bin_arr, hamming_code(_in, _out, binary_array_to_int(in_bin_arr))):
+    check_array = hamming_code(_in, _out, binary_array_to_int(pop_nulls(_in, _out, bin_arr)))
+    if not bin_arr_comparison(in_bin_arr, check_array): # error cause of nulls pushed to vector casts it to wrong int
         return 'Vector is broken' # TODO: return exception or smth more usefull than this
     return bin_arr
 
@@ -38,6 +39,14 @@ def bin_arr_comparison(lst1, lst2):
 # print(bin_arr_comparison([0, 0, 1], [1, 0, 0]))
 # print(bin_arr_comparison([1, 1, 1], [1, 0, 1]))
 
+
+def step(num):
+    if num in [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]:  # TODO: correct
+        return True
+    else:
+        return False
+
+
 def push_nulls(_in, _out, vector):
     # push nulls
     # nulled: bool = []
@@ -52,11 +61,16 @@ def push_nulls(_in, _out, vector):
     return nulled
 
 
-def step(num):
-    if num in [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]:  # TODO: correct
-        return True
-    else:
-        return False
+def pop_nulls(_in, _out, vector):
+    result = []
+    for i in range(1, _out+1):
+        if not step(i):
+            result.append(vector[i-1])
+    return result
+
+#tests for pop nulls
+# print(pop_nulls(4, 7, [0, 0, 1, 0, 0, 1, 0]))
+# print(pop_nulls(11, 15, [0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]))
 
 
 def code_control_bits(_out, vector):  # TODO: do
@@ -97,6 +111,9 @@ def generate_masks(_out):
     return masks[:count_of_masks]
 
 
+
+
+
 # TESTS
 
 if 90 == binary_array_to_int(hamming_code(4, 7, 10)):
@@ -110,6 +127,6 @@ else:
     print('TEST2 ERROR')
 
 
-print(hamming_decode(4, 7, [1, 1, 1, 1, 1, 1, 1]))
-
+if hamming_decode(4, 7, hamming_code(4, 7, 10)) == push_nulls(4, 7, [1, 0, 1, 0]):
+    print('OK')
 
