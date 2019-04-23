@@ -7,6 +7,7 @@
 
 from kurs_channel.Hamming_module import hamming_code, hamming_decode, binary_array_to_int, push_nulls, pop_nulls
 from kurs_channel.other_methods import int_to_binary_array
+import time
 
 
 def code_file(file_name):
@@ -16,7 +17,7 @@ def code_file(file_name):
     res_bytes = []
     for i in range(len(res)):
         res_bytes.extend(int_to_binary_array(8, res[i]))
-    print(res_bytes)
+    # print(res_bytes)
     res_arr = []
     # l = len(res_bytes)
     while len(res_bytes) > 11:
@@ -62,21 +63,35 @@ def decode_file(bin_arr):
     return res_arr
 
 
+# def get_str(_arr):
+#     res_str = []
+#     while len(_arr) >= 8:
+#         res_str.append((binary_array_to_int(_arr[0:8])))
+#         _arr = _arr[8:].copy()
+#     result = bytes(res_str)
+#     return result
+
+
 def get_str(_arr):
     res_str = []
-    while len(_arr) >= 8:
-        res_str.append((binary_array_to_int(_arr[0:8])))
-        _arr = _arr[8:].copy()
+    tmp = []
+    for i in range(0, len(_arr), 8):
+        tmp = _arr[i:i+8]
+        res_str.append(binary_array_to_int(tmp))
     result = bytes(res_str)
     return result
 
 
-arr = code_file('test.txt')
+print(get_str([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]))
+
+now = time.time()
+arr = code_file('test2.txt')
 decoded = decode_file(arr)
 res = get_str(decoded)
-# print(res)
 f = open('test_result.txt', 'wb')
 f.write(res)
+after = time.time()
+print('result - ', after-now)
 
 # arr = code_file('123.jpg')
 # print(len(arr))
