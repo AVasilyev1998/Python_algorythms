@@ -1,39 +1,51 @@
-#
-# f = open('123.jpg', 'rb')
-# res = f.read()
-# with open('new.jpg','wb') as jpeg_file:
-#     jpeg_file.write(res)
-
-
 from kurs_channel.Hamming_module import hamming_code, hamming_decode, binary_array_to_int, push_nulls, pop_nulls
 from kurs_channel.other_methods import int_to_binary_array
 import time
 
 
+# def code_file(file_name):
+#     # f = open('test.txt','rb')
+#     f = open(file_name, 'rb')
+#     res = f.read()
+#     res_bytes = []
+#     for i in range(len(res)):
+#         res_bytes.extend(int_to_binary_array(8, res[i]))
+#     # print(res_bytes)
+#     res_arr = []
+#     # l = len(res_bytes)
+#     while len(res_bytes) > 11:
+#         tmp_arr = res_bytes[0:11]
+#         tmp_arr = hamming_code(11, 15, tmp_arr)
+#         res_arr.extend(tmp_arr)
+#         res_bytes = res_bytes[11:].copy()
+#     while len(res_bytes) < 11:
+#         res_bytes.append(0)
+#     res_bytes = hamming_code(11, 15, res_bytes)
+#     res_arr.extend(res_bytes)
+#     return res_arr
+
+
 def code_file(file_name):
-    # f = open('test.txt','rb')
-    f = open(file_name, 'rb')
-    res = f.read()
+    file = open(file_name, 'rb')
+    res = file.read()
     res_bytes = []
     for i in range(len(res)):
         res_bytes.extend(int_to_binary_array(8, res[i]))
-    # print(res_bytes)
     res_arr = []
     # l = len(res_bytes)
-    while len(res_bytes) > 11:
-        tmp_arr = res_bytes[0:11]
-        # print(tmp_arr)
-        # TODO: do smth with tmp_arr
+    # while len(res_bytes) > 11:
+    #     tmp_arr = res_bytes[0:11]
+    #     tmp_arr = hamming_code(11, 15, tmp_arr)
+    #     res_arr.extend(tmp_arr)
+    #     res_bytes = res_bytes[11:].copy()
+    for i in range(0, len(res_bytes)-11, 11):
+        tmp_arr = res_bytes[i:i+11]
         tmp_arr = hamming_code(11, 15, tmp_arr)
         res_arr.extend(tmp_arr)
-        # print(res_arr)
-        res_bytes = res_bytes[11:].copy()
     while len(res_bytes) < 11:
         res_bytes.append(0)
     res_bytes = hamming_code(11, 15, res_bytes)
     res_arr.extend(res_bytes)
-    # print(res_arr)
-    # print(len(res_arr), '  ', l)
     return res_arr
 
 
@@ -81,8 +93,6 @@ def get_str(_arr):
     result = bytes(res_str)
     return result
 
-
-print(get_str([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]))
 
 now = time.time()
 arr = code_file('test2.txt')
