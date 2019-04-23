@@ -1,11 +1,13 @@
 
-def int_to_binary_array(target_length, num): # TODO: refactor this shit
+def int_to_binary_array(target_length, num):  # TODO: refactor this shit
     """
         :param target_length int
         :param num int
         :return binary_array
     """
-    s = str(bin(num))
+    # s = str(bin(num))
+    # s = s[2:]
+    s = bin(num)
     binary = []
     for i in s[2:]:
         if i == '1':
@@ -20,23 +22,8 @@ def int_to_binary_array(target_length, num): # TODO: refactor this shit
         # print(corrected_binary)
     return corrected_binary
 
-#
-# print(int_to_binary_array(12, 32))
 
-
-def old_int_to_binary_array(num):  # Deprecated
-    """
-    :param num int
-    :return binary_array
-    """
-    s = str(bin(num))
-    binary = []
-    for i in s[2:]:
-        if i == '1':
-            binary.append(1)
-        else:
-            binary.append(0)
-    return binary
+print(int_to_binary_array(10, 32))
 
 
 # print('TEST 1 32 - ', int_to_binary_array(32))
