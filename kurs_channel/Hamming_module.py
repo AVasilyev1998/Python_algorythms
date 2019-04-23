@@ -31,9 +31,10 @@ def hamming_decode(_in, _out, bin_arr):
     for i in [2**i for i in range(count)]:
         bin_arr[i-1] = 0
     # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
-    check_array = hamming_code(_in, _out, binary_array_to_int(pop_nulls(_in, _out, bin_arr)))
+    check_array = hamming_code(_in, _out, pop_nulls(_in, _out, bin_arr))
     if not bin_arr_comparison(in_bin_arr, check_array): # error cause of nulls pushed to vector casts it to wrong int
-        return 'Vector is broken' # TODO: return exception or smth more usefull than this
+        return 'Vector is broken'  # TODO: return exception or smth more usefull than this
+    bin_arr = pop_nulls(11, 15, bin_arr)
     return bin_arr
 
 
@@ -126,7 +127,6 @@ def generate_masks(_out):
         count_of_masks += 1
         i += 1
     return masks[:count_of_masks]
-
 
 
 # TESTS

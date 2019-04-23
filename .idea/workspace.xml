@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="">
+    <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="IN WORK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs_channel/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs_channel/other_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/other_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python_algorythms$test_files_coding.coverage" NAME="test_files_coding Coverage Results" MODIFIED="1556014544791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$test_files_coding.coverage" NAME="test_files_coding Coverage Results" MODIFIED="1556021509080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/algorythms_console$insert_sort.coverage" NAME="insert_sort Coverage Results" MODIFIED="1550744179522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$ID_2.coverage" NAME="ID_2 Coverage Results" MODIFIED="1551970182424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_3.coverage" NAME="ID_3 Coverage Results" MODIFIED="1551972603911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
@@ -28,7 +28,7 @@
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_5.coverage" NAME="ID_5 Coverage Results" MODIFIED="1552208708576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
     <SUITE FILE_PATH="coverage/algorythms_console$count_sort.coverage" NAME="count_sort Coverage Results" MODIFIED="1551952105785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$main_.coverage" NAME="main_ Coverage Results" MODIFIED="1551952932155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1556013537863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1556021290659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_4.coverage" NAME="ID_4 Coverage Results" MODIFIED="1551973242902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
   </component>
   <component name="FileEditorManager">
@@ -36,8 +36,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+            <state relative-caret-position="130">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+              <folding>
+                <element signature="e#127#394#0" />
+                <element signature="e#1174#1346#0" />
+                <element signature="e#1650#1789#0" />
+                <element signature="e#1831#2061#0" />
+                <element signature="e#2487#3212#0" />
+                <element signature="e#3245#3530#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,11 +53,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
-                <element signature="e#118#236#0" expanded="true" />
-                <element signature="e#515#551#0" />
+                <element signature="e#118#219#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -135,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,7 +159,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,7 +326,8 @@
       <updated>1550135414202</updated>
       <workItem from="1555737389664" duration="900000" />
       <workItem from="1555919143443" duration="887000" />
-      <workItem from="1556009854271" duration="5735000" />
+      <workItem from="1556009854271" duration="6053000" />
+      <workItem from="1556019353979" duration="2169000" />
     </task>
     <task id="LOCAL-00001" summary="commit all project">
       <created>1551970559234</created>
@@ -419,17 +427,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556012848725</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="IN WORK">
+      <created>1556016397136</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556016397136</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7522000" />
+    <option name="totallyTimeSpent" value="10009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12727273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12878788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -501,7 +516,8 @@
     <MESSAGE value="Jet brains inside changes" />
     <MESSAGE value="code and decode are complete" />
     <MESSAGE value="testing hamming on files" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing hamming on files" />
+    <MESSAGE value="IN WORK" />
+    <option name="LAST_COMMIT_MESSAGE" value="IN WORK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -552,23 +568,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
           <line>144</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -695,6 +716,13 @@
     <entry file="file://$PROJECT_DIR$/kurs_channel/new.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -702,27 +730,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+        <state relative-caret-position="130">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="e#127#394#0" />
+            <element signature="e#1174#1346#0" />
+            <element signature="e#1650#1789#0" />
+            <element signature="e#1831#2061#0" />
+            <element signature="e#2487#3212#0" />
+            <element signature="e#3245#3530#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#118#236#0" expanded="true" />
-            <element signature="e#515#551#0" />
+            <element signature="e#118#219#0" expanded="true" />
           </folding>
         </state>
       </provider>

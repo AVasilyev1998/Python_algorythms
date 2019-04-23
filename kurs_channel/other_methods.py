@@ -24,7 +24,7 @@ def int_to_binary_array(target_length, num): # TODO: refactor this shit
 # print(int_to_binary_array(12, 32))
 
 
-def old_int_to_binary_array(num):  # TODO: write target vector length add 0 to front 00....
+def old_int_to_binary_array(num):  # Deprecated
     """
     :param num int
     :return binary_array
