@@ -1,15 +1,15 @@
 from kurs_channel.other_methods import int_to_binary_array, binary_array_to_int
 
 
-def hamming_code(_in, _out, vector):
+def hamming_code(_in, _out, binary_arr):
     """
 
-    :param _in: int
+    :param _in: bin_arr
     :param _out: int
     :param vector: int
     :return: binary_arr
     """
-    binary_arr = int_to_binary_array(vector)
+    # binary_arr = int_to_binary_array(vector)
     nulled = push_nulls(_in, _out, binary_arr)
     coded_arr = code_control_bits(_out, nulled)
     return coded_arr
@@ -75,6 +75,9 @@ def push_nulls(_in, _out, vector):
     return nulled
 
 
+# print(push_nulls(11, 15, [1, 1, 0, 1, 0, 0, 0, 0, 1, 0]))
+
+
 def pop_nulls(_in, _out, vector):
     result = []
     for i in range(1, _out+1):
@@ -98,7 +101,7 @@ def code_control_bits(_out, vector):  # TODO: do
     for j in res_masks:
         mask = j
         summary = 0
-        for k in int_to_binary_array(mask):
+        for k in int_to_binary_array(_out, mask):
             if k == 1:
                 summary += 1
         if summary % 2 == 0:
