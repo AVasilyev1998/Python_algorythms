@@ -11,8 +11,16 @@ def hamming_code(_in, _out, int_num):
     """
     # binary_arr = int_to_binary_array(vector)
     nulled = push_nulls(_in, _out, int_num)
-    coded_arr = code_control_bits(_out, nulled)
-    return coded_arr
+    coded_control_arr = code_control_bits(_out, nulled)
+    res_control_bits_iter = 0
+    for i in range(1, 15):
+        if step(i):
+            if coded_control_arr[res_control_bits_iter]:
+                nulled += 2**(15-i)
+            res_control_bits_iter += 1
+        if res_control_bits_iter > coded_control_arr.__len__():
+            break
+    return nulled
 
 
 # def hamming_decode(_in, _out, bin_arr):
@@ -117,17 +125,14 @@ def pop_nulls(_in, _out, int_num):
 
 
 def code_control_bits(_out, int_num):  # TODO: do
-    int_vector = int_num.__int__()
-    print(id(int_vector))
-    print(id(int_num))
-
+    int_vector = int_num
     res_masks: int = []
     # res_masks = []
     res_control_bits = []
     for i in generate_masks(_out):
         res_masks.append(int_vector & i)  # vector - array
         # print(res_masks)
-    print(int_num)
+    # print(locals())
     for j in res_masks:
         mask = j
         # print(mask)
@@ -140,15 +145,15 @@ def code_control_bits(_out, int_num):  # TODO: do
         else:
             res_control_bits.append(1)
     print(res_control_bits)
-    res_control_bits_iter = 0
-    for i in range(1, 15):
-        if step(i):
-            if res_control_bits[res_control_bits_iter]:
-                int_num += 2**(15-i)
-                res_control_bits_iter += 1
-        if res_control_bits_iter > res_control_bits.__len__():
-            break
-    return int_num
+    # res_control_bits_iter = 0
+    # for i in range(1, 15):
+    #     if step(i):
+    #         if res_control_bits[res_control_bits_iter]:
+    #             int_num += 2**(15-i)
+    #             res_control_bits_iter += 1
+    #     if res_control_bits_iter > res_control_bits.__len__():
+    #         break
+    return res_control_bits
 
 
 def generate_masks(_out):
@@ -163,15 +168,16 @@ def generate_masks(_out):
     return masks[:count_of_masks]
 
 
-sum = 0
-for i in range(11):
-    sum += 2**i
-print(sum)
-nulled = push_nulls(11, 15, 2074)
-print(int_to_binary_array(15, push_nulls(11, 15, 2045)))
-print(int_to_binary_array(15, code_control_bits(15, nulled)))
-
-
+# sum = 0
+# for i in range(11):
+#     sum += 2**i
+# # print(sum)
+# nulled = push_nulls(11, 15, 2074)
+# print(int_to_binary_array(15, nulled))
+# # print(15, push_nulls(11, 15, 2074))
+# print(int_to_binary_array(15, hamming_code(11, 15, 2074)))
+#
+#
 
 # TESTS
 #
