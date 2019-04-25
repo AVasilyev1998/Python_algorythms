@@ -6,7 +6,7 @@ def hamming_code(_in, _out, binary_arr):
 
     :param _in: bin_arr
     :param _out: int
-    :param vector: int
+    :param binary_arr: int
     :return: binary_arr
     """
     # binary_arr = int_to_binary_array(vector)
@@ -32,27 +32,10 @@ def hamming_decode(_in, _out, bin_arr):
         bin_arr[i-1] = 0
     # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
     check_array = hamming_code(_in, _out, pop_nulls(_in, _out, bin_arr))
-    if not bin_arr_comparison(in_bin_arr, check_array): # error cause of nulls pushed to vector casts it to wrong int
+    if in_bin_arr != check_array: # error cause of nulls pushed to vector casts it to wrong int
         return 'Vector is broken'  # TODO: return exception or smth more usefull than this
     bin_arr = pop_nulls(11, 15, bin_arr)
     return bin_arr
-
-
-def bin_arr_comparison(lst1, lst2):
-    if len(lst1) == len(lst2):
-        for i in range(len(lst1)):
-            if lst1[i] != lst2[i]:
-                return False
-    else:
-        return False
-    return True
-
-# bin_arr_comparison tests:
-# print(bin_arr_comparison([1, 0, 1], [1, 0, 1, 1]))
-# print(bin_arr_comparison([1, 0, 1], [1, 0, 1]))
-# print(bin_arr_comparison([1, 0, 1], [1, 0, 0]))
-# print(bin_arr_comparison([0, 0, 1], [1, 0, 0]))
-# print(bin_arr_comparison([1, 1, 1], [1, 0, 1]))
 
 
 def step(num):
@@ -60,11 +43,17 @@ def step(num):
         return True
     else:
         return False
+    # dict_power = {1: 1, 2: 2, 4: 4, 8: 8, 16: 16, 32: 32, 64: 64, 128: 128, 256: 256, 512: 512, 1024: 1024}
+    # if dict_power.get(num) is not None:
+    #     return True
+    # else:     NOT EFFECTIVE METHOD
+    #     return False
+    # pass
+
+
 
 
 def push_nulls(_in, _out, vector):
-    # push nulls
-    # nulled: bool = []
     nulled = []
     j = 0
     for i in range(1, _out+1):
@@ -86,15 +75,15 @@ def pop_nulls(_in, _out, vector):
             result.append(vector[i-1])
     return result
 
-#tests for pop nulls
+
 # print(pop_nulls(4, 7, [0, 0, 1, 0, 0, 1, 0]))
 # print(pop_nulls(11, 15, [0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]))
 
 
 def code_control_bits(_out, vector):  # TODO: do
     int_vector = binary_array_to_int(vector)
-    # res_masks: int = []
-    res_masks = []
+    res_masks: int = []
+    # res_masks = []
     res_control_bits = []
     for i in generate_masks(_out):
         res_masks.append(int_vector & i)  # vector - array

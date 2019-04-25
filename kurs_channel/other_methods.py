@@ -5,8 +5,6 @@ def int_to_binary_array(target_length, num):  # TODO: refactor this shit
         :param num int
         :return binary_array
     """
-    # s = str(bin(num))
-    # s = s[2:]
     s = bin(num)
     binary = []
     for i in s[2:]:
@@ -19,11 +17,7 @@ def int_to_binary_array(target_length, num):  # TODO: refactor this shit
         for i in range(target_length - binary.__len__()):
             corrected_binary.append(0)
         corrected_binary.extend(binary)
-        # print(corrected_binary)
     return corrected_binary
-
-
-print(int_to_binary_array(10, 32))
 
 
 # print('TEST 1 32 - ', int_to_binary_array(32))

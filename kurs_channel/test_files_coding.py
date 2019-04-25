@@ -1,28 +1,6 @@
-from kurs_channel.Hamming_module import hamming_code, hamming_decode, binary_array_to_int, push_nulls, pop_nulls
+from kurs_channel.Hamming_module import hamming_code, hamming_decode, binary_array_to_int
 from kurs_channel.other_methods import int_to_binary_array
 import time
-
-
-# def code_file(file_name):
-#     # f = open('test.txt','rb')
-#     f = open(file_name, 'rb')
-#     res = f.read()
-#     res_bytes = []
-#     for i in range(len(res)):
-#         res_bytes.extend(int_to_binary_array(8, res[i]))
-#     # print(res_bytes)
-#     res_arr = []
-#     # l = len(res_bytes)
-#     while len(res_bytes) > 11:
-#         tmp_arr = res_bytes[0:11]
-#         tmp_arr = hamming_code(11, 15, tmp_arr)
-#         res_arr.extend(tmp_arr)
-#         res_bytes = res_bytes[11:].copy()
-#     while len(res_bytes) < 11:
-#         res_bytes.append(0)
-#     res_bytes = hamming_code(11, 15, res_bytes)
-#     res_arr.extend(res_bytes)
-#     return res_arr
 
 
 def code_file(file_name):
@@ -32,12 +10,6 @@ def code_file(file_name):
     for i in range(len(res)):
         res_bytes.extend(int_to_binary_array(8, res[i]))
     res_arr = []
-    # l = len(res_bytes)
-    # while len(res_bytes) > 11:
-    #     tmp_arr = res_bytes[0:11]
-    #     tmp_arr = hamming_code(11, 15, tmp_arr)
-    #     res_arr.extend(tmp_arr)
-    #     res_bytes = res_bytes[11:].copy()
     for i in range(0, len(res_bytes)-11, 11):
         tmp_arr = res_bytes[i:i+11]
         tmp_arr = hamming_code(11, 15, tmp_arr)
@@ -49,39 +21,14 @@ def code_file(file_name):
     return res_arr
 
 
-# print(code_file('test.txt'))
-
-
-# def decode_file(bin_arr):
-#     res_arr = []
-#     while len(bin_arr) >= 15:
-#         tmp_arr = bin_arr[0:15]
-#         # print(tmp_arr)
-#         res_arr.extend(hamming_decode(11, 15, tmp_arr))
-#         bin_arr = bin_arr[15:].copy()
-#     # getting round amount of bytes
-#     result_arr = []
-#     while len(res_arr) >= 8:
-#         result_arr.extend(res_arr[0:8])
-#         res_arr = res_arr[8:].copy()
-#     return result_arr
-
 def decode_file(bin_arr):
     res_arr = []
-    for i in range(0, len(bin_arr)-15,15):
+    for i in range(0, len(bin_arr)-15, 15):
         tmp_arr = bin_arr[i:i+15]
         res_arr.extend(hamming_decode(11, 15, tmp_arr))
     res_arr = res_arr[0:len(res_arr) - len(res_arr) % 8]
+    res_arr = get_str(res_arr)
     return res_arr
-
-
-# def get_str(_arr):
-#     res_str = []
-#     while len(_arr) >= 8:
-#         res_str.append((binary_array_to_int(_arr[0:8])))
-#         _arr = _arr[8:].copy()
-#     result = bytes(res_str)
-#     return result
 
 
 def get_str(_arr):
@@ -94,31 +41,20 @@ def get_str(_arr):
     return result
 
 
-now = time.time()
-arr = code_file('test2.txt')
-decoded = decode_file(arr)
-res = get_str(decoded)
-f = open('test_result.txt', 'wb')
-f.write(res)
-after = time.time()
-print('result - ', after-now)
-
-# arr = code_file('123.jpg')
-# print(len(arr))
-# # decoded = decode_file(arr)
-# # res = get_str(decoded)
-# print(len(decoded))
-# f = open('newJPG123.jpg', 'wb')
-# f.write(res)
-
-# def get_subarray(_from, _to, arr):
-#     return arr[_from:_to]
-#
-#
-# print(get_subarray(0, 10, res_bytes))
+def func_test(func_code,func_decode, in_file, res_file):
+    before = time.time()
+    coded = func_code(in_file)
+    decoded = func_decode(coded)
+    f = open(res_file, 'wb')
+    f.write(decoded)
+    after = time.time()
+    return after - before
 
 
-# arr: bool = []
-# arr.append(True)
-# print(type(arr[0]))
-# print(type(arr))
+test_arr = []
+for i in range(10):
+    test_arr.append(func_test(code_file,decode_file, '2kb.txt', 'test_result.txt'))
+test_arr_res = open('test_time.txt', 'a')
+test_arr_res.write('\n')
+for i in test_arr:
+    test_arr_res.write(str(i))
