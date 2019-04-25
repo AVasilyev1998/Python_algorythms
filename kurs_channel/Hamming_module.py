@@ -124,8 +124,10 @@ def code_control_bits(_out, int_num):  # TODO: do
     for i in generate_masks(_out):
         res_masks.append(int_vector & i)  # vector - array
         # print(res_masks)
+    print(int_num)
     for j in res_masks:
         mask = j
+        # print(mask)
         summary = 0
         for k in int_to_binary_array(_out, mask):
             if k == 1:
@@ -134,24 +136,36 @@ def code_control_bits(_out, int_num):  # TODO: do
             res_control_bits.append(0)
         else:
             res_control_bits.append(1)
+    print(res_control_bits)
     res_control_bits_iter = 0
-    for i in range(1, len(int_num)):
+    for i in range(1, 15):
         if step(i):
-            int_num[i-1] = res_control_bits[res_control_bits_iter]
-            res_control_bits_iter += 1
+            if res_control_bits[res_control_bits_iter]:
+                int_num += 2**(15-i)
+                res_control_bits_iter += 1
     return int_num
 
 
 def generate_masks(_out):
-    # masks: int =
-    masks = [6148914691236517205, 3689348814741910323, 1085102592571150095,
-             71777214294589695, 281470681808895, 4294967295]
+    # masks = [6148914691236517205, 3689348814741910323, 1085102592571150095,
+    #          71777214294589695, 281470681808895, 4294967295]
+    masks = [5461, 13107, 3855, 255]
     count_of_masks = 0
     i = 0
     while 2**i <= _out:
         count_of_masks += 1
         i += 1
     return masks[:count_of_masks]
+
+
+sum = 0
+for i in range(11):
+    sum += 2**i
+print(sum)
+nulled = push_nulls(11, 15, 2047)
+print(int_to_binary_array(15, push_nulls(11, 15, 2047)))
+print(int_to_binary_array(15, code_control_bits(15, nulled)))
+
 
 
 # TESTS
