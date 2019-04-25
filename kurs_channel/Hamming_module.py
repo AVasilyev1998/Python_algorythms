@@ -6,7 +6,7 @@ def hamming_code(_in, _out, int_num):
 
     :param _in: bin_arr
     :param _out: int
-    :param binary_arr: int
+    :param int_num: int
     :return: binary_arr
     """
     # binary_arr = int_to_binary_array(vector)
