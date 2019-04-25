@@ -17,9 +17,12 @@ def int_to_binary_array(target_length, num):  # TODO: refactor this shit
         for i in range(target_length - binary.__len__()):
             corrected_binary.append(0)
         corrected_binary.extend(binary)
-    return corrected_binary
+        return corrected_binary
+    else:
+        return binary
 
 
+# print(int_to_binary_array(12, 11))
 # print('TEST 1 32 - ', int_to_binary_array(32))
 
 

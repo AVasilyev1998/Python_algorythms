@@ -25,7 +25,8 @@ def decode_file(bin_arr):
     res_arr = []
     for i in range(0, len(bin_arr)-15, 15):
         tmp_arr = bin_arr[i:i+15]
-        res_arr.extend(hamming_decode(11, 15, tmp_arr))
+        # res_arr.extend(hamming_decode(11, 15, tmp_arr))
+        res_arr.extend(hamming_decode(11, 15, binary_array_to_int(tmp_arr)))
     res_arr = res_arr[0:len(res_arr) - len(res_arr) % 8]
     res_arr = get_str(res_arr)
     return res_arr
