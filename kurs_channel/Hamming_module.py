@@ -117,7 +117,10 @@ def pop_nulls(_in, _out, int_num):
 
 
 def code_control_bits(_out, int_num):  # TODO: do
-    int_vector = int_num
+    int_vector = int_num.__int__()
+    print(id(int_vector))
+    print(id(int_num))
+
     res_masks: int = []
     # res_masks = []
     res_control_bits = []
@@ -143,6 +146,8 @@ def code_control_bits(_out, int_num):  # TODO: do
             if res_control_bits[res_control_bits_iter]:
                 int_num += 2**(15-i)
                 res_control_bits_iter += 1
+        if res_control_bits_iter > res_control_bits.__len__():
+            break
     return int_num
 
 
@@ -162,8 +167,8 @@ sum = 0
 for i in range(11):
     sum += 2**i
 print(sum)
-nulled = push_nulls(11, 15, 2047)
-print(int_to_binary_array(15, push_nulls(11, 15, 2047)))
+nulled = push_nulls(11, 15, 2074)
+print(int_to_binary_array(15, push_nulls(11, 15, 2045)))
 print(int_to_binary_array(15, code_control_bits(15, nulled)))
 
 
