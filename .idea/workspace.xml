@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kurs_channel/test_result.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs_channel/other_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/other_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Python_algorythms$tmp_to_delete.coverage" NAME="tmp_to_delete Coverage Results" MODIFIED="1556201990610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_algorythms$test_files_coding.coverage" NAME="test_files_coding Coverage Results" MODIFIED="1556202060103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$test_files_coding.coverage" NAME="test_files_coding Coverage Results" MODIFIED="1556205914204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/algorythms_console$insert_sort.coverage" NAME="insert_sort Coverage Results" MODIFIED="1550744179522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$ID_2.coverage" NAME="ID_2 Coverage Results" MODIFIED="1551970182424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_3.coverage" NAME="ID_3 Coverage Results" MODIFIED="1551972603911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
@@ -31,16 +31,21 @@
     <SUITE FILE_PATH="coverage/Python_algorythms$other_methods.coverage" NAME="other_methods Coverage Results" MODIFIED="1556202841661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/algorythms_console$count_sort.coverage" NAME="count_sort Coverage Results" MODIFIED="1551952105785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$main_.coverage" NAME="main_ Coverage Results" MODIFIED="1551952932155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1556204149284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$Hamming_module.coverage" NAME="Hamming_module Coverage Results" MODIFIED="1556205807531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_4.coverage" NAME="ID_4 Coverage Results" MODIFIED="1551973242902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="e#401#442#0" />
+                <element signature="e#1221#2040#0" />
+                <element signature="e#1155#1539#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,39 +60,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kurs_channel/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10575">
+              <caret line="705" column="32" selection-start-line="705" selection-start-column="32" selection-end-line="705" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kurs_channel/test2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="754" column="23" lean-forward="true" selection-start-line="754" selection-start-column="23" selection-end-line="754" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kurs_channel/test_time.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/kurs_channel/new_res.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kurs_channel/test_result.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3496" selection-start-column="3496" selection-end-column="3496" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/kurs_channel/text_encode.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -134,12 +140,12 @@
         <option value="$PROJECT_DIR$/123.py" />
         <option value="$PROJECT_DIR$/deque.py" />
         <option value="$PROJECT_DIR$/kurs_channel/test.txt" />
-        <option value="$PROJECT_DIR$/kurs_channel/test_result.txt" />
         <option value="$PROJECT_DIR$/kurs_channel/test2.txt" />
         <option value="$PROJECT_DIR$/tmp_to_delete.py" />
-        <option value="$PROJECT_DIR$/kurs_channel/test_files_coding.py" />
         <option value="$PROJECT_DIR$/kurs_channel/other_methods.py" />
+        <option value="$PROJECT_DIR$/kurs_channel/test_result.txt" />
         <option value="$PROJECT_DIR$/kurs_channel/Hamming_module.py" />
+        <option value="$PROJECT_DIR$/kurs_channel/test_files_coding.py" />
       </list>
     </option>
   </component>
@@ -201,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Hamming_module">
+  <component name="RunManager" selected="Python.test_files_coding">
     <configuration name="Hamming_module" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorythms_console" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -321,9 +327,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_files_coding" />
         <item itemvalue="Python.Hamming_module" />
         <item itemvalue="Python.other_methods" />
-        <item itemvalue="Python.test_files_coding" />
         <item itemvalue="Python.tmp_to_delete" />
         <item itemvalue="Python.deque" />
       </list>
@@ -345,7 +351,7 @@
       <workItem from="1556019353979" duration="12171000" />
       <workItem from="1556181963628" duration="7530000" />
       <workItem from="1556194967473" duration="1129000" />
-      <workItem from="1556197184974" duration="5248000" />
+      <workItem from="1556197184974" duration="6976000" />
     </task>
     <task id="LOCAL-00001" summary="commit all project">
       <created>1551970559234</created>
@@ -487,17 +493,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556187940850</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="IN WORK">
+      <created>1556204234726</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1556204234726</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33918000" />
+    <option name="totallyTimeSpent" value="35646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13409092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13409092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -632,7 +645,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kurs_channel/Hamming_module.py</url>
-          <line>99</line>
+          <line>103</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
@@ -759,42 +772,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/test_result.jpg" />
     <entry file="file://$PROJECT_DIR$/kurs_channel/test_result.gif" />
-    <entry file="file://$PROJECT_DIR$/kurs_channel/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="694" column="79" selection-start-line="694" selection-start-column="79" selection-end-line="876" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/new.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/masks.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/test2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="754" column="23" lean-forward="true" selection-start-line="754" selection-start-column="23" selection-end-line="754" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/smile.gif">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/test_result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3496" selection-start-column="3496" selection-end-column="3496" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/test_time.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -803,12 +788,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
+    <entry file="file://$PROJECT_DIR$/kurs_channel/test2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="274">
+          <caret line="754" column="23" lean-forward="true" selection-start-line="754" selection-start-column="23" selection-end-line="754" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10575">
+          <caret line="705" column="32" selection-start-line="705" selection-start-column="32" selection-end-line="705" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/test_time.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/test_result.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/text_encode.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/new_res.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp_to_delete.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -819,8 +827,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#401#442#0" />
+            <element signature="e#1221#2040#0" />
+            <element signature="e#1155#1539#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>

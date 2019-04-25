@@ -1,7 +1,7 @@
 from kurs_channel.other_methods import int_to_binary_array, binary_array_to_int
 
 
-def hamming_code(_in, _out, binary_arr):
+def hamming_code(_in, _out, int_num):
     """
 
     :param _in: bin_arr
@@ -10,7 +10,7 @@ def hamming_code(_in, _out, binary_arr):
     :return: binary_arr
     """
     # binary_arr = int_to_binary_array(vector)
-    nulled = push_nulls(_in, _out, binary_arr)
+    nulled = push_nulls(_in, _out, int_num)
     coded_arr = code_control_bits(_out, nulled)
     return coded_arr
 
@@ -53,12 +53,11 @@ def hamming_decode(_in, _out, int_num):
     non_control_bits = int_num & mask_to_get_non_control_bits
     control_bits = int_num & mask_to_get_control_bits
     # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
-    check_array = hamming_code(_in, _out, pop_nulls(_in, _out, int_to_binary_array(15, int_num)))
-    if control_bits != check_array:  # error cause of nulls pushed to vector casts it to wrong int
+    check_int = hamming_code(_in, _out, int_to_binary_array(15, pop_nulls(_in, _out, int_num)))
+    if int_num != check_int:  # error cause of nulls pushed to vector casts it to wrong int
         return 'Vector is broken'  # TODO: return exception or smth more useful than this
-    bin_arr = pop_nulls(11, 15, int_to_binary_array(non_control_bits))
-    return bin_arr
-
+    result_int = pop_nulls(11, 15, int_to_binary_array(non_control_bits))
+    return result_int
 
 
 def step(num):
@@ -66,24 +65,29 @@ def step(num):
         return True
     else:
         return False
-    # dict_power = {1: 1, 2: 2, 4: 4, 8: 8, 16: 16, 32: 32, 64: 64, 128: 128, 256: 256, 512: 512, 1024: 1024}
-    # if dict_power.get(num) is not None:
-    #     return True
-    # else:     NOT EFFECTIVE METHOD
-    #     return False
-    # pass
 
 
-def push_nulls(_in, _out, vector):
-    nulled = []
-    j = 0
-    for i in range(1, _out+1):
-        if step(i):
-            nulled.append(0)
-        else:
-            nulled.append(vector[j])
-            j += 1
-    return nulled
+def push_nulls(_in, _out, int_num):
+        result = 0
+        if int_num & 2**10:
+            result += 2**12
+        left_mask = 896
+        left = int_num & left_mask
+        left <<= 1
+        result += left
+        right_mask = 127
+        right = int_num & right_mask
+        result += right
+        return result
+
+
+# sum = 0
+# for i in range(11):
+#     sum += 2**i
+# print(sum)
+# print(int_to_binary_array(15, sum))
+# print(int_to_binary_array(15, push_nulls(11, 15, 2047)))
+# print( 2**9 + 2**8 + 2**7)
 
 
 # print(push_nulls(11, 15, [1, 1, 0, 1, 0, 0, 0, 0, 1, 0]))
@@ -100,33 +104,20 @@ def push_nulls(_in, _out, vector):
 def pop_nulls(_in, _out, int_num):
     result = 0
     if _in == 11 and _out == 15:
-        # if int_num & 2**12:
-        #     result += 2**10
-        # if int_num & 2**10:
-        #     result += 2**9
-
+        if int_num & 2**12:
+            result += 2**10
         left = int_num & 1792  # mask left bits near 8th control - 2**10 + 2**9 + 2**8
-        print(int_to_binary_array(15, left))
-        left >>= 1
-        print(int_to_binary_array(15, left))
-        # right = int_num & 127  # mask right bits near 8th control - 2**6 + 2**5 + 2**4 + 2**3 + 2**2 + 2**1 + 1
-        # result += left + right
+        left >>= 1  # left shift(facepalm)  to pop one more control bit
+        result += left
+        right = int_num & 127  # mask right bits near 8th control - 2**6 + 2**5 + 2**4 + 2**3 + 2**2 + 2**1 + 1
+        result += right
         return result
     else:
         return -1
 
 
-print(int_to_binary_array(15, 6015))
-print(int_to_binary_array(11, pop_nulls(11, 15, 22271)))
-
-
-# print(pop_nulls(4, 7, [0, 0, 1, 0, 0, 1, 0]))
-# print(pop_nulls(11, 15, [0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]))
-print(2**10 + 2**9 + 2**8)
-
-
-def code_control_bits(_out, vector):  # TODO: do
-    int_vector = binary_array_to_int(vector)
+def code_control_bits(_out, int_num):  # TODO: do
+    int_vector = int_num
     res_masks: int = []
     # res_masks = []
     res_control_bits = []
@@ -144,11 +135,11 @@ def code_control_bits(_out, vector):  # TODO: do
         else:
             res_control_bits.append(1)
     res_control_bits_iter = 0
-    for i in range(1, len(vector)):
+    for i in range(1, len(int_num)):
         if step(i):
-            vector[i-1] = res_control_bits[res_control_bits_iter]
+            int_num[i-1] = res_control_bits[res_control_bits_iter]
             res_control_bits_iter += 1
-    return vector
+    return int_num
 
 
 def generate_masks(_out):

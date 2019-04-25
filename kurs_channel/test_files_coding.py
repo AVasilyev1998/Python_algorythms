@@ -42,20 +42,28 @@ def get_str(_arr):
     return result
 
 
-def func_test(func_code,func_decode, in_file, res_file):
-    before = time.time()
-    coded = func_code(in_file)
-    decoded = func_decode(coded)
-    f = open(res_file, 'wb')
-    f.write(decoded)
-    after = time.time()
-    return after - before
+# def func_test(func_code,func_decode, in_file, res_file):
+#     before = time.time()
+#     coded = func_code(in_file)
+#     decoded = func_decode(coded)
+#     f = open(res_file, 'wb')
+#     f.write(decoded)
+#     after = time.time()
+#     return after - before
+#
+#
+# test_arr = []
+# for i in range(10):
+#     test_arr.append(func_test(code_file,decode_file, '2kb.txt', 'test_result.txt'))
+# test_arr_res = open('test_time.txt', 'a')
+# test_arr_res.write('\n')
+# for i in test_arr:
+#     test_arr_res.write(str(i))
 
 
-test_arr = []
-for i in range(10):
-    test_arr.append(func_test(code_file,decode_file, '2kb.txt', 'test_result.txt'))
-test_arr_res = open('test_time.txt', 'a')
-test_arr_res.write('\n')
-for i in test_arr:
-    test_arr_res.write(str(i))
+coded = code_file('text_encode.txt')
+decoded = decode_file(coded)
+res = get_str(decoded)
+f = open('new_res.txt', 'wb')
+f.write(res)
+print(coded)
