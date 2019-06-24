@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="testing hamming on files">
+    <list default="true" id="ae33485f-e3cf-4c65-a2f6-fdf3ff709405" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/Hamming_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs_channel/other_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/other_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs_channel/test_files_coding.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +18,7 @@
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_2.coverage" NAME="ID_2 Coverage Results" MODIFIED="1551971617679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
     <SUITE FILE_PATH="coverage/Python_algorythms$ID_5.coverage" NAME="ID_5 Coverage Results" MODIFIED="1552208708576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
     <SUITE FILE_PATH="coverage/Python_algorythms$123.coverage" NAME="123 Coverage Results" MODIFIED="1553411262637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_algorythms$other_methods.coverage" NAME="other_methods Coverage Results" MODIFIED="1555861634916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs_channel" />
     <SUITE FILE_PATH="coverage/algorythms_console$main_.coverage" NAME="main_ Coverage Results" MODIFIED="1551952932155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$binary_search.coverage" NAME="binary_search Coverage Results" MODIFIED="1551956111653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorythms_console$ID_2.coverage" NAME="ID_2 Coverage Results" MODIFIED="1551970182424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_Eiler_algs_id" />
@@ -35,20 +33,23 @@
     <session id="743821501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1849" />
-          <entry key="txt" value="72" />
+          <entry key="py" value="2106" />
+          <entry key="txt" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="72" />
-          <entry key="Python" value="1849" />
+          <entry key="PLAIN_TEXT" value="120" />
+          <entry key="Python" value="2106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,14 +76,6 @@
             <state relative-caret-position="345">
               <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
-                <element signature="e#825#992#0" />
-                <element signature="e#999#1026#0" />
-                <element signature="e#1424#1563#0" />
-                <element signature="e#727#957#0" />
-                <element signature="e#1715#1836#0" />
-                <element signature="e#1998#2018#0" />
-                <element signature="e#1174#1893#0" />
-                <element signature="e#1926#2211#0" />
                 <marker date="1555861020242" expanded="true" signature="1159:1620" ph="..." />
                 <marker date="1555861020242" expanded="true" signature="2087:2361" ph="..." />
               </folding>
@@ -94,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+            <state relative-caret-position="465">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -229,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_files_coding">
+  <component name="RunManager" selected="Python.other_methods">
     <configuration name="123" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorythms_console" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,28 +267,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ID_5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algorythms_console" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/proj_Eiler_algs_id" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/proj_Eiler_algs_id/ID_5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorythms_console" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -310,6 +281,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deque.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="other_methods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorythms_console" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kurs_channel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kurs_channel/other_methods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -341,19 +334,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ID_5" />
       <item itemvalue="Python.123" />
       <item itemvalue="Python.deque" />
       <item itemvalue="Python.Hamming_module" />
       <item itemvalue="Python.test_files_coding" />
+      <item itemvalue="Python.other_methods" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.other_methods" />
         <item itemvalue="Python.test_files_coding" />
         <item itemvalue="Python.Hamming_module" />
         <item itemvalue="Python.deque" />
         <item itemvalue="Python.123" />
-        <item itemvalue="Python.ID_5" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555860607812</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="some fixes needed">
+      <created>1555861302164</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555861302164</updated>
+    </task>
+    <task id="LOCAL-00015" summary="IN WORK">
+      <created>1555861310947</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555861310947</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -470,13 +477,12 @@
     <frame x="-1" y="0" width="1922" height="1173" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12379936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12593383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3295238" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626467" visible="true" weight="0.3152381" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626467" visible="true" weight="0.3152381" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49733192" weight="0.26666668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,6 +493,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.3295238" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4994664" weight="0.3295238" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3295238" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,7 +552,9 @@
     <MESSAGE value="Jet brains inside changes" />
     <MESSAGE value="code and decode are complete" />
     <MESSAGE value="testing hamming on files" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing hamming on files" />
+    <MESSAGE value="some fixes needed" />
+    <MESSAGE value="IN WORK" />
+    <option name="LAST_COMMIT_MESSAGE" value="IN WORK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -729,10 +738,21 @@
     <entry file="file://$PROJECT_DIR$/kurs_channel/new.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <marker date="1555861020242" expanded="true" signature="1159:1620" ph="..." />
+            <marker date="1555861020242" expanded="true" signature="2087:2361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/test_files_coding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -743,29 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kurs_channel/Hamming_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#825#992#0" />
-            <element signature="e#999#1026#0" />
-            <element signature="e#1424#1563#0" />
-            <element signature="e#727#957#0" />
-            <element signature="e#1715#1836#0" />
-            <element signature="e#1998#2018#0" />
-            <element signature="e#1174#1893#0" />
-            <element signature="e#1926#2211#0" />
-            <marker date="1555861020242" expanded="true" signature="1159:1620" ph="..." />
-            <marker date="1555861020242" expanded="true" signature="2087:2361" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kurs_channel/other_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+        <state relative-caret-position="465">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
         </state>
       </provider>
     </entry>
