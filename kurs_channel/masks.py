@@ -60,3 +60,27 @@
 #                 32 - i) + 2 ** (31 - i)
 # print(buffer)
 #end sixth mask
+
+
+# MASKS FOR 11 15
+
+# buffer = 0
+# for i in range(2, 15, 2):
+#     buffer += 2**(14-i)
+# print(buffer)
+# #
+# buffer = 0
+# for i in range(1, 15, 4):
+#     buffer += 2**(14-i) + 2**(13-i)
+# print(buffer)
+# # # end second mask
+# #
+# buffer = 0
+# for i in range(3, 15, 8):
+#     buffer += 2**(14-i) + 2**(13-i) + 2**(12-i) + 2**(11-i)
+# print(buffer)
+# #
+# buffer = 0
+# for i in range(7, 15, 16):
+#     buffer += 2**(14-i) + 2**(13-i) + 2**(12-i) + 2**(11-i) + 2**(10-i) + 2**(9-i) + 2**(8-i) + 2**(7-i)
+# print(buffer)
