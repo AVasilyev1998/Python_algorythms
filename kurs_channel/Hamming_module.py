@@ -60,11 +60,10 @@ def hamming_decode(_in, _out, int_num):
     mask_to_get_non_control_bits = 6015
     non_control_bits = int_num & mask_to_get_non_control_bits
     control_bits = int_num & mask_to_get_control_bits
-    # if in_bin_arr == hamming_code(_in, _out, binary_array_to_int(in_bin_arr)):
-    check_int = hamming_code(_in, _out, int_to_binary_array(15, pop_nulls(_in, _out, int_num)))
+    check_int = hamming_code(_in, _out, pop_nulls(_in, _out, int_num))
     if int_num != check_int:  # error cause of nulls pushed to vector casts it to wrong int
         return 'Vector is broken'  # TODO: return exception or smth more useful than this
-    result_int = pop_nulls(11, 15, int_to_binary_array(non_control_bits))
+    result_int = pop_nulls(11, 15, non_control_bits)
     return result_int
 
 
@@ -144,15 +143,6 @@ def code_control_bits(_out, int_num):  # TODO: do
             res_control_bits.append(0)
         else:
             res_control_bits.append(1)
-    print(res_control_bits)
-    # res_control_bits_iter = 0
-    # for i in range(1, 15):
-    #     if step(i):
-    #         if res_control_bits[res_control_bits_iter]:
-    #             int_num += 2**(15-i)
-    #             res_control_bits_iter += 1
-    #     if res_control_bits_iter > res_control_bits.__len__():
-    #         break
     return res_control_bits
 
 
@@ -166,6 +156,7 @@ def generate_masks(_out):
         count_of_masks += 1
         i += 1
     return masks[:count_of_masks]
+
 
 
 # sum = 0
