@@ -1,4 +1,4 @@
-from my_simple_db.DB_Core import DBCore
+from my_simple_db.DB_Core import DataBase
 
 
 class BDDriver:
@@ -11,7 +11,7 @@ class BDDriver:
 
     @classmethod
     def create_db(cls, name):
-        cls.stopped_db[name] = DBCore(name=name)
+        cls.stopped_db[name] = DataBase(name=name)
 
     @classmethod
     def start_db(cls, name):
