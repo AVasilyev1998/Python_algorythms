@@ -17,6 +17,10 @@ class DataBase:
     def read(self):
         return self.data
 
+    def show_bd(self):
+        for i in self.data.items():
+            print(i)
+
     def update(self, name, value):
         self.data[name] = value
 
@@ -32,7 +36,6 @@ if __name__ == '__main__':
     print('test start DB_Core.py')
     db.update('alex', {'payment': '20000', 'work': 'management'})
     db.update('lois', {'payment': '15000', 'work': 'programmer'})
-    my_db = db.read()
-    for elem in my_db.items():
-        if elem['alex']:
-            print(elem['alex']['payment'])
+    db.show_bd()
+    print(db.read()['alex']['payment'])
+

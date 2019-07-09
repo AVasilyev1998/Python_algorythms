@@ -1,52 +1,51 @@
+import shelve
 from my_simple_db.DB_Core import DataBase
 
 
-class BDDriver:
-
-    active_db = {}
-    stopped_db = {}
+class DBDriver:
 
     def __init__(self):
-        pass
+        self.active_db = shelve.open('active_dbs')
+        self.stopped_db = shelve.open('stopped_dbs')
 
-    @classmethod
-    def create_db(cls, name):
-        cls.stopped_db[name] = DataBase(name=name)
+    def create_db(self, name):
+        tmpDb = DataBase(name)
+        self.stopped_db[name] = tmpDb
 
-    @classmethod
-    def start_db(cls, name):
-        if cls.stopped_db.get(name):
-            cls.active_db[name] = cls.stopped_db.get(name)
-            cls.stopped_db.pop(name)
+    def start_db(self, name):
+        if self.stopped_db.get(name):
+            self.active_db[name] = self.stopped_db.get(name)
+            self.stopped_db.pop(name)
         else:
             print('error: Start DB error')
 
-    @classmethod
-    def createstart_db(cls, name):
-        cls.create_db(name)
-        cls.start_db(name)
+    def createstart_db(self, name):
+        self.create_db(name)
+        self.start_db(name)
 
-    @classmethod
-    def stop_db(cls, name):
-        if cls.active_db.get(name):
-            cls.stopped_db[name] = cls.active_db.get(name)
-            cls.active_db.pop(name)
+    def stop_db(self, name):
+        if self.active_db.get(name):
+            self.stopped_db[name] = self.active_db.get(name)
+            self.active_db.pop(name)
 
-    @classmethod
-    def show_active(cls):
-        if cls.active_db.__len__() == 0:
+    def show_active(self):
+        if self.active_db.__len__() == 0:
             print('there are no active db`s')
         else:
             print('active db`s: ', end='')
-            for i in cls.active_db.keys():
+            for i in self.active_db.keys():
                 print(i, end=' ')
             print()
+
+    def __del__(self):
+        self.active_db.close()
+        self.stopped_db.close()
 
 
 if __name__ == '__main__':
     print('BD_Driver test start from DB_Driver.py')
-    driver = BDDriver()
-    driver.show_active()
-    driver.createstart_db('my_db')
-    driver.createstart_db('my_db2')
-    driver.show_active()
+    driver = DBDriver()
+    # driver.show_active()
+    driver.create_db('somedb')
+    # driver.createstart_db('my_db2')
+    # driver.show_active()
