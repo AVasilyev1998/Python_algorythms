@@ -1,4 +1,4 @@
-from my_simple_db.db_core import DBCore
+from my_simple_db.DB_Core import DBCore
 
 
 class BDDriver:
@@ -37,13 +37,16 @@ class BDDriver:
         if cls.active_db.__len__() == 0:
             print('there are no active db`s')
         else:
+            print('active db`s: ', end='')
             for i in cls.active_db.keys():
-                print(i)
+                print(i, end=' ')
+            print()
 
 
 if __name__ == '__main__':
-    print('BD_Driver test start from BD_Driver.py')
+    print('BD_Driver test start from DB_Driver.py')
     driver = BDDriver()
     driver.show_active()
     driver.createstart_db('my_db')
+    driver.createstart_db('my_db2')
     driver.show_active()
