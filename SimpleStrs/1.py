@@ -3,9 +3,10 @@
 import re
 from mimesis import Person
 from mimesis import Address
+import shelve
 
 
-AMOUNT = 3000
+AMOUNT = 2000
 
 
 class MyPerson:
@@ -31,7 +32,8 @@ for k, v in person_dict.items():
     print(f'{k} | {v}')
 
 
-write_data = open('personal.txt', 'w')
+db = shelve.open('db.txt')
+db['db'] = person_dict
+db.close()
 
-for i in person_dict.keys():
-    write_data.write(str(person_dict[i])+'\n')
+
