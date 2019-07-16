@@ -32,9 +32,14 @@ class MyPerson:
 #     print(f'{k} | {v}')
 
 
-db = shelve.open('db.txt')
-for elem in db['db'].items():
-    print(elem)
-db.close()
-
-
+# db = shelve.open('db.txt')
+# # for elem in db['db'].items():
+# #     print(elem)
+# db_dict = db['db']
+# print(f'{db_dict[1]}')
+#
+# print(list(db_dict.items())[:2])
+#
+# for i in list(db_dict.items())[:100]:
+#     print(i)
+# db.close()
