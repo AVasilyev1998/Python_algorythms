@@ -5,11 +5,12 @@ class DataBase:
 
     def __init__(self, name):
         self.name = name
-        self.data = shelve.open(filename=name)
+        self.data = {}
 
     def __del__(self):
         # print('db saved and closed')
-        self.data.close()
+        # self.data.close()
+        pass
 
     def __repr__(self):
         return self.name
